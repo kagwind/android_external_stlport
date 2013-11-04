@@ -19,6 +19,7 @@
 #  define _STLP_OUTERMOST_HEADER_ID 0x3
 #  include <stl/_prolog.h>
 #endif
+#include <cstddef> // Make sure std::size_t is defined
 
 #include <stl/_cstddef.h> // for std::size_t
 

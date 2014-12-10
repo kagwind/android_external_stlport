@@ -16,8 +16,11 @@
  *
  */
 
-static inline size_t* local_cast(void* p){
-  union{void* p; size_t* size_t_p;}u_cast;
+static inline size_t* local_cast(void* p) {
+  union {
+    void* p;
+    size_t* size_t_p;
+  } u_cast;
   u_cast.p = p;
   return u_cast.size_t_p;
 }
